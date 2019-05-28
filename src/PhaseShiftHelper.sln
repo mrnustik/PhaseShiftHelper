@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.28917.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhaseShift.Library", "PhaseShift.Library\PhaseShift.Library.csproj", "{826A54E2-4AAF-4A43-87CD-52C44A166819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhaseShift.Library.Parsing", "PhaseShift.Library.Parsing\PhaseShift.Library.Parsing.csproj", "{12F191DB-0209-4EFB-B065-9418A919A52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhaseShift.Library.Parsing", "PhaseShift.Library.Parsing\PhaseShift.Library.Parsing.csproj", "{12F191DB-0209-4EFB-B065-9418A919A52A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{802037D6-91E4-4518-A9DF-9C301BA132BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhaseShift.Library.Parsing.Tests", "Tests\PhaseShift.Library.Parsing.Tests\PhaseShift.Library.Parsing.Tests.csproj", "{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhaseShift.Library.Parsing.Tests", "Tests\PhaseShift.Library.Parsing.Tests\PhaseShift.Library.Parsing.Tests.csproj", "{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

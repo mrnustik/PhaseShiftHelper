@@ -9,4 +9,8 @@
     <ProjectReference Include="..\PhaseShift.Library\PhaseShift.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Search\" />
+  </ItemGroup>
+
 </Project>
