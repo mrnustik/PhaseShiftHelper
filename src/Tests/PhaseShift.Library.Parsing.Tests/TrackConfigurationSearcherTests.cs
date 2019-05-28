@@ -7,16 +7,17 @@ using Xunit;
 
 namespace PhaseShift.Library.Parsing.Tests
 {
-    public class TrackConfigurationSearcherTests
+    public class TrackConfigurationSearcherTests : TestBase
     {
         [Fact] 
         public void Find_InParentDirectory_HasValidValues()
         {
             var sut = new TrackConfigurationSearcher();
 
-            var configurationFiles = sut.FindSongConfigurationFiles("../../../../../../sample_data");
+            var configurationFiles = sut.FindSongConfigurationFiles(TestLibraryPath);
 
             Assert.Equal(2, configurationFiles.Count());
         }
+
     }
 }
