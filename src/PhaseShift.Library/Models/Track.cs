@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using PhaseShift.Library.Locations;
 
 namespace PhaseShift.Library.Models
@@ -6,7 +7,7 @@ namespace PhaseShift.Library.Models
     public class Track
     {
         public Song Song { get; }
-        public IChildLocation Location { get; }
+        public FileInfo Location { get; set; }
         public Difficulty GuitarDifficulty { get; }
         public Difficulty RealGuitarDifficulty { get; }
         public Difficulty DrumDifficulty { get; }

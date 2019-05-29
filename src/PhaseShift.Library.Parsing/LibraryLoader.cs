@@ -19,11 +19,13 @@ namespace PhaseShift.Library.Parsing
         public Models.Library LoadLibrary(string path)
         {
             var trackFiles = trackConfigurationSearcher.FindSongConfigurationFiles(path);
-            var library = new Models.Library();
+            var library = new Models.Library(new DirectoryInfo(path));
             foreach (var file in trackFiles)
             {
                 var text = File.ReadAllText(file.FullName);
-                library.AddSong(trackParser.Parse(text));
+                Models.Track item = trackParser.Parse(text);
+                item.Location = file;
+                library.AddSong(item);
             }
             return library;
         }
