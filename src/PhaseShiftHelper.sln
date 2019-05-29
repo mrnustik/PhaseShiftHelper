@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{802037D6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhaseShift.Library.Parsing.Tests", "Tests\PhaseShift.Library.Parsing.Tests\PhaseShift.Library.Parsing.Tests.csproj", "{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhaseShift.Tools.LibrarySorter", "PhaseShift.Tools.LibrarySorter\PhaseShift.Tools.LibrarySorter.csproj", "{9FE6D90A-9223-4602-97B1-88B26B5C6868}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{609DCA9C-AFBC-4E9A-BE21-8AD4FD1C9496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE6D90A-9223-4602-97B1-88B26B5C6868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE6D90A-9223-4602-97B1-88B26B5C6868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE6D90A-9223-4602-97B1-88B26B5C6868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE6D90A-9223-4602-97B1-88B26B5C6868}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
