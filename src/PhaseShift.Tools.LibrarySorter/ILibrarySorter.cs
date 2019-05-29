@@ -5,6 +5,6 @@ namespace PhaseShift.Tools.LibrarySorter
 {
     public interface ILibrarySorter
     {
-        void Sort(Library.Models.Library library, SortingOption[] options);
+        void Sort(Library.Models.Library library, params SortingOption[] options);
     }
 }

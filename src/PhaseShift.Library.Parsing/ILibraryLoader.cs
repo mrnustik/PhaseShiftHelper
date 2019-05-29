@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PhaseShift.Library.Parsing
 {
-    interface ILibraryLoader
+    public interface ILibraryLoader
     {
         Models.Library LoadLibrary(string path);
     }

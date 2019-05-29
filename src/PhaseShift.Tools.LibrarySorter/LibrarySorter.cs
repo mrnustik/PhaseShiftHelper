@@ -8,7 +8,7 @@ namespace PhaseShift.Tools.LibrarySorter
 {
     public class LibrarySorter : ILibrarySorter
     {
-        public void Sort(Library.Models.Library library, SortingOption[] options)
+        public void Sort(Library.Models.Library library, params SortingOption[] options)
         {
             foreach (var track in library.Items)
             {
