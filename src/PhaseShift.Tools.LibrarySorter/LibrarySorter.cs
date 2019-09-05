@@ -1,4 +1,5 @@
-﻿using PhaseShift.Library.Models;
+﻿using System;
+using PhaseShift.Library.Models;
 using PhaseShift.Tools.LibrarySorter.Options;
 using System.Collections.Generic;
 using System.IO;
@@ -8,12 +9,22 @@ namespace PhaseShift.Tools.LibrarySorter
 {
     public class LibrarySorter : ILibrarySorter
     {
+        private readonly IDirectoryCleaner directoryCleaner;
+        private readonly IDirectoryCapitalizer dierctoryCapitalizer;
+        public LibrarySorter(IDirectoryCleaner directoryCleaner, IDirectoryCapitalizer dierctoryCapitalizer)
+        {
+            this.directoryCleaner = directoryCleaner;
+            this.dierctoryCapitalizer = dierctoryCapitalizer;
+        }
+
         public void Sort(Library.Models.Library library, params SortingOption[] options)
         {
             foreach (var track in library.Items)
             {
                 MoveTrackToLocation(library, options, track);
             }
+            directoryCleaner.ClearEmptyDirectories(library.Location);
+            dierctoryCapitalizer.CapitalizeDirectories(library.Location);
         }
 
         private void MoveTrackToLocation(Library.Models.Library library, SortingOption[] options, Track track)

@@ -22,9 +22,9 @@ namespace PhaseShfit.Tools.LibrarySorter.Cli
 
             var serviceProvider = CreateServiceProvider();
             var loader = serviceProvider.GetService<ILibraryLoader>();
-            var libary = loader.LoadLibrary(args[0]);
+            var library = loader.LoadLibrary(args[0]);
             var sorter = serviceProvider.GetService<ILibrarySorter>();
-            sorter.Sort(libary, DefaultSortingOptions.ByAuthor, DefaultSortingOptions.ByName);
+            sorter.Sort(library, DefaultSortingOptions.ByAuthor, DefaultSortingOptions.ByName);
         }
 
         private static IServiceProvider CreateServiceProvider()
@@ -35,6 +35,8 @@ namespace PhaseShfit.Tools.LibrarySorter.Cli
                 .AddSingleton<ITrackConfigurationSearcher, TrackConfigurationSearcher>()
                 .AddSingleton<ITrackParser, TrackParser>()
                 .AddSingleton<ILibraryLoader, LibraryLoader>()
+                .AddSingleton<IDirectoryCleaner, EmptyDirectoryCleaner>()
+                .AddSingleton<IDirectoryCapitalizer, DirectoryCapitalizer>()
                 .BuildServiceProvider();
         }
     }
