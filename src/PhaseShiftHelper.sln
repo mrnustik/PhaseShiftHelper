@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CLI", "CLI", "{7CE331CA-9AE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhaseShfit.Tools.LibrarySorter.Cli", "PhaseShfit.Tools.LibrarySorter.Cli\PhaseShfit.Tools.LibrarySorter.Cli.csproj", "{0E128E7B-664D-468F-B32C-525EE8B1AEB4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3CABAF3-65CA-4969-875B-DD9C7549E909}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
