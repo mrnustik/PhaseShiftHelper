@@ -1,5 +1,7 @@
 # PhaseShiftHelper
 
+[![.NET](https://github.com/mrnustik/PhaseShiftHelper/actions/workflows/dotnet.yml/badge.svg)](https://github.com/mrnustik/PhaseShiftHelper/actions/workflows/dotnet.yml)
+
 Set of tools used for working with the game Phase Shift.
 
 ## Library Sorter 
